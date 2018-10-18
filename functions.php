@@ -9,4 +9,6 @@ function enqueue_scripts()
     wp_localize_script('bundle', 'REACT_ENV', array(
         'baseUrl'         => get_bloginfo('url'),
     ));
+
+    wp_enqueue_style('style', get_stylesheet_uri());
 }

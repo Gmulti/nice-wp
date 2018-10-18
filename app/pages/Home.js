@@ -1,11 +1,11 @@
-import React, { Component } from 'react'
-import { Link } from 'react-router-dom'
+import React, { Component, Fragment } from 'react'
+import Header from '../components/Header'
+
 class Home extends Component {
     render() {
         return (
-            <div>
-                Home
-                <Link to="/page/23">Page 1</Link>
+            <div id="page">
+                <Header />
             </div>
         )
     }

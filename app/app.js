@@ -14,13 +14,11 @@ class App extends Component {
         return (
             <Provider store={store}>
                 <ConnectedRouter history={Store.history}>
-                    <div>
-                        <Switch>
-                            <Route exact path="/" component={Home} />
-                            <Route path="/page/:id" component={Page} />
-                            <Route path="*" component={All} />
-                        </Switch>
-                    </div>
+                    <Switch>
+                        <Route exact path="/" component={Home} />
+                        <Route path="/page/:id" component={Page} />
+                        <Route path="*" component={All} />
+                    </Switch>
                 </ConnectedRouter>
             </Provider>
         )
