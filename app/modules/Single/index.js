@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { PostFromPhp, PostFromApi } from '../../components'
 
-class ViewStaticPostComposed extends Component {
+class Single extends Component {
     render() {
         const { id } = this.props
         return (
@@ -12,4 +12,4 @@ class ViewStaticPostComposed extends Component {
     }
 }
 
-export default ViewStaticPostComposed
+export default Single
